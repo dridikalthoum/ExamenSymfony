@@ -1,0 +1,13 @@
+{% if votes is empty %}
+    <h5>Pas de vote</h5>
+{%else%}
+    <table class="table-bordered" >
+        ...
+        <tr>
+            <td>{{v.date |date }}</td>
+            <td>{{v.nombreVote}}</td>
+        </tr>
+        ...
+        </tbody>
+    </table>
+{%endif%}
